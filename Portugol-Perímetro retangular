@@ -1,0 +1,40 @@
+algoritmo
+   declare P, B, A numerico //R= raio; pi=pi; A=área do circulo; R_2= raio ao quadrado 
+  
+   escreva " Escreva a base do retângulo em m(metros)"
+   
+   leia B
+   
+ enquanto B <= 0 faca
+     
+     repita
+     escreva " inválido"
+     escreva " Escreva a base do retângulo em m(metros)"
+     leia B
+     ate B > 0
+    escreva B
+    
+    escreva " Escreva a altura do retângulo em m(metros)"
+ 
+   leia A
+    
+    enquanto A <= 0 ou A = B faca
+     
+     repita
+     se A = B entao //caso Altura e base forem iguais é um quadrado
+     escreva " as medidas são de um quadrado"
+     
+     se A <= 0 entao 
+     escreva " inválido"
+     escreva " Escreva a altura do retângulo em m(metros)"
+     
+leia A
+     ate A > 0 e A > B ou A < B
+     escreva A
+     
+   P <- A + A + B + B // perímetro 
+   escreva P , "m ,este é o seu perímetro do retângulo---Sayonara" //Área do circulo 
+   			
+    
+    
+fim_algoritmo
