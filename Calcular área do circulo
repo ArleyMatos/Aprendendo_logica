@@ -1,0 +1,14 @@
+algoritmo
+   declare R, pi, A, R2 numerico //R= raio; pi=pi; A=área do circulo; R_2= raio ao quadrado 
+   escreva " Escreva o raio do circulo em m(metros)"
+   leia R 
+   R2 <- R * R // O raio pode ser negativo pois é elavado ao quadrado
+   pi <- 3.1415926535 
+   A <- R2 * pi 
+   se R2 <= 0 entao 
+   escreva "inválido"
+   senao escreva A , "m² está é a sua área do circulo---Sayonara" //Área do circulo 
+   			
+    
+    
+fim_algoritmo
