@@ -1,0 +1,50 @@
+algoritmo
+   declare P, B, A, C numerico //P=perimetro ; A= reta A; B= reta B ; C= reta C.
+  
+   escreva " Escreva o valor da reta A em m(metros)"
+   
+   leia A
+   
+    enquanto A <= 0 faca
+ inicio     
+     repita
+        escreva " inválido"
+        escreva " Escreva novamente o valor da reta A em m(metros)"
+      leia A
+    ate A > 0
+    escreva A
+ fim    
+    
+    escreva " Escreva o valor da reta B em m(metros)"
+   leia B
+    
+    enquanto B <> A faca
+ inicio
+      repita
+       escreva " Inválido"
+       escreva " Não é um triângulo"
+       escreva " Escreva novamente o valor da reta B em m(metros)"
+      leia B
+    ate B = A 
+       escreva B
+ fim      
+     escreva " Escreva o valor da reta C em m(metros)"
+   leia C
+    
+    enquanto C <> B faca
+ inicio     
+      repita
+        escreva " Inválido"
+        escreva " Não é um triângulo"
+        escreva " Escreva novamente o valor da reta C em m(metros)"
+       leia C 
+     ate C = B 
+        escreva C 
+fim        
+     
+     P <- A + B + C // perímetro 
+        escreva P , "m ,este é o seu perímetro do triângulo---Sayonara" 
+   			
+    
+    
+fim_algoritmo
