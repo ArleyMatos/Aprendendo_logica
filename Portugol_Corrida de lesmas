@@ -1,0 +1,33 @@
+algoritmo
+declare L, i, velo, maior,N numerico
+//enquanto
+//ler lesmas
+//ler a primeira vez
+//guarda em uma variavel primeiro
+//ler próxima vez 
+//se maior 
+escreva "Vamos ver os níveis de velocidade das lesmas!!!"
+escreva "insira o número de lesmas que ira analisar dessa vez"
+leia L
+enquanto L <> 0 faca
+	inicio
+	escreva "digite a velocidade de cada lesma uma de cada vez"
+	maior <- 0
+	leia velo
+	
+		para i <-2 ate L faca passo 1
+			inicio
+			se velo > maior entao
+			maior <-velo
+			leia velo
+			fim
+		se maior >= 20 entao 
+			escreva "Nível 3"
+		senao se maior>=10 entao
+			escreva "Nível 2"
+		senao 
+			escreva "Nível 1"
+	leia L
+	fim
+ escreva "FIM"
+fim_algoritmo
